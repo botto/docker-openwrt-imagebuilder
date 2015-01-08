@@ -10,7 +10,7 @@ RUN apt-get install wget
 
 RUN useradd -m builder
 
-ADD https://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-x86_64.tar.bz2 /home/builder/openwrt.tar.bz2
+ADD %%IMGBUILDFILE%% /home/builder/openwrt.tar.bz2
 
 RUN chown -R builder /home/builder
 
