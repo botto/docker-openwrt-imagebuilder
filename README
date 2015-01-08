@@ -1,0 +1,20 @@
+Will build a 14.07 openwrt image for ar71xxx  
+
+```bash
+git clone git@github.com:botto/docker-openwrt-imagebuilder.git
+cd docker-openwrt-imagebuilder
+docker build -t imgb .
+docker run imgb make info
+docker run imgb make image PROFILE="TLWR703"
+```
+
+If you want to have the bin files dumped to a location you can find them then
+
+```bash
+cd docker-openwrt-imagebuilder
+mkdir openwrt-bin
+docker run -v openwrt-bin:/openwrt-bin imgb make image PROFILE="TLWR703" BIN_DIR="/openwrt-bin"
+cd openwrt-bin
+```
+
+
