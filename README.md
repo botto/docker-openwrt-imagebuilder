@@ -1,6 +1,7 @@
 Script that prepares a dockerfile to build a openwrt imagebuilder
 
 To prepare an ar71xxx imagebuilder
+
 ```bash
 ./prepare.sh https://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-x86_64.tar.bz2
 docker build -t botto/openwrt-imagebuilder-ar71xxx .
