@@ -22,4 +22,8 @@ $ docker run -v openwrt-bin:/openwrt-bin botto/openwrt-imagebuilder-ar71xxx make
 $ cd openwrt-bin
 ```
 
+## Existing container
+If you don't want to run the build but simply want to download a container, ar71xxx already has a prepared container
+docker pull botto/openwrt-imagebuilder-ar71xxx
+
 
